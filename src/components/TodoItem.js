@@ -1,9 +1,15 @@
-function TodoItem() {
+import "../styles/TodoItem.css";
+
+function TodoItem({ completed, text }) {
   return (
-    <li>
-      <span>V</span>
-      <p>Mercar</p>
-      <span>X</span>
+    <li className="TodoItem">
+      <span className={`Icon Icon-check ${completed && "Icon-check--active"}`}>
+        ✓
+      </span>
+      <p className={`TodoItem-p ${completed && "TodoItem-p--complete"}`}>
+        {text}
+      </p>
+      <span className="Icon Icon-delete">✘</span>
     </li>
   );
 }
