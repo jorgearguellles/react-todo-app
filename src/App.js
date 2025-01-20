@@ -1,13 +1,26 @@
 import { useState } from "react";
-import { TodoCounter } from "./components/TodoCounter";
-import { TodoSearch } from "./components/TodoSearch";
-import { TodoList } from "./components/TodoList";
-import { TodoItem } from "./components/TodoItem";
-import { CreateTodoBtn } from "./components/CreateTodoBtn";
 import { useLocalStorage } from "./hooks/useLocalStorage";
+import { AppUI } from "./AppUI";
+
+// localStorage.removeItem('TODOS_V1');
+
+// const defaultTodos = [
+//   { text: 'Cut onion', completed: true },
+//   { text: 'Take intro react course', completed: false },
+//   { text: 'Crying with cry', completed: false },
+//   { text: 'LALA', completed: false },
+//   { text: 'Derivates states', completed: true },
+// ];
+
+// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
 
 function App() {
-  const [todos, saveTodos] = useLocalStorage("TODOS_V1", []);
+  const {
+    item: todos,
+    saveItem: saveTodos,
+    loading,
+    error,
+  } = useLocalStorage("TODOS_V1", []);
   const [searchValue, setSearchValue] = useState("");
 
   const completedTodos = todos.filter((todo) => todo.completed).length;
@@ -30,24 +43,16 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <TodoCounter completed={completedTodos} total={totalTodos} />
-      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
-
-      <TodoList>
-        {filteredTodos.map((todo) => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
-          />
-        ))}
-      </TodoList>
-
-      <CreateTodoBtn setTodos={saveTodos} />
-    </div>
+    <AppUI
+      setSearchValue={setSearchValue}
+      completedTodos={completedTodos}
+      totalTodos={totalTodos}
+      filteredTodos={filteredTodos}
+      completeTodo={completeTodo}
+      deleteTodo={deleteTodo}
+      loading={loading}
+      error={error}
+    />
   );
 }
 

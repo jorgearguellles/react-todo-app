@@ -1,0 +1,40 @@
+
+.TodoList {
+  margin: 0;
+  padding: 0 0 56px 0;
+  list-style: none;
+}
+
+.TodoItem {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  padding-right: 35px;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.75);
+  height: 80px;
+  overflow: hidden;
+}
+
+/* Animación de carga */
+@keyframes loading {
+  0% {
+    background-color: rgba(165, 165, 165, 0.1);
+  }
+  50% {
+    background-color: rgba(165, 165, 165, 0.3);
+  }
+  100% {
+    background-color: rgba(165, 165, 165, 0.1);
+  }
+}
+
+/* Efecto de skeleton */
+.Loading-Skeleton {
+  animation: loading 1.5s infinite;
+  border-radius: 50%;
+}

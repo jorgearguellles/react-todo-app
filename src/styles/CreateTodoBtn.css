@@ -1,6 +1,6 @@
 .CreateTodoButton {
   background-color: #239c08;
-  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+  /* box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5); */
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -22,4 +22,19 @@
 
 .CreateTodoButton:hover {
   transform: rotate(224deg);
+}
+
+/* Nueva clase para titilar */
+.CreateTodoButton.empty-todos {
+  animation: blink 1s infinite;
+}
+
+/* Animación de parpadeo */
+@keyframes blink {
+  0%, 100% {
+    box-shadow: 0 0 15px 5px rgba(35, 156, 8, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 25px 10px rgba(35, 156, 8, 0.4);
+  }
 }
