@@ -1,13 +1,17 @@
+import { useContext } from "react";
+import { TodoContext } from "../context/todoContext";
 import "../styles/TodoCounter.css";
 
-function TodoCounter({ completed = 0, total = 0 }) {
+function TodoCounter() {
+  const { completedTodos, totalTodos } = useContext(TodoContext);
+
   let message;
-  if (total === 0) {
+  if (totalTodos === 0) {
     message = "Create a ToDo !";
-  } else if (completed === total) {
+  } else if (completedTodos === totalTodos) {
     message = "You finished all your ToDos, Congratulations!!!";
   } else {
-    message = `You finished ${completed} from ${total} ToDos`;
+    message = `You finished ${completedTodos} from ${totalTodos} ToDos`;
   }
 
   return <h3 className="TodoCounter">{message}</h3>;
