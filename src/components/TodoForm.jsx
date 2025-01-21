@@ -4,17 +4,17 @@ import { TodoContext } from "../context/todoContext";
 import "../styles/TodoForm.css";
 
 export function TodoForm() {
-  const { addTodo, setOpenModal } = useContext(TodoContext);
+  const { addTodo, setIsOpenModal } = useContext(TodoContext);
   const [newTodoValue, setNewTodoValue] = useState("");
 
   const onSubmit = (event) => {
     event.preventDefault();
     addTodo(newTodoValue);
-    setOpenModal(false);
+    setIsOpenModal(false);
   };
 
   const onCancel = () => {
-    setOpenModal(false);
+    setIsOpenModal(false);
   };
 
   const onChange = (event) => {
@@ -28,16 +28,18 @@ export function TodoForm() {
         placeholder="Do ..."
         value={newTodoValue}
         onChange={onChange}
+        autoFocus
+        required
       ></textarea>
       <div className="TodoForm-btns-container">
         <button
-          className="TodoForm-btn Todo-btn--cancel"
+          className="TodoForm-button TodoForm-button--cancel"
           type="button"
           onClick={onCancel}
         >
           Cancel
         </button>
-        <button className="TodoForm-btn Todo-btn--create" type="submit">
+        <button className="TodoForm-button TodoForm-button--add" type="submit">
           Create
         </button>
       </div>
