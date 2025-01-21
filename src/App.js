@@ -11,14 +11,14 @@ function App() {
 
 export default App;
 
-// localStorage.removeItem('TODOS_V1');
+// localStorage.removeItem("TODOS_V1");
 
 // const defaultTodos = [
-//   { text: 'Cut onion', completed: true },
-//   { text: 'Take intro react course', completed: false },
-//   { text: 'Crying with cry', completed: false },
-//   { text: 'LALA', completed: false },
-//   { text: 'Derivate states', completed: true },
+//   { text: "Cut onion", completed: true },
+//   { text: "Take intro react course", completed: false },
+//   { text: "Crying with cry", completed: false },
+//   { text: "LALA", completed: false },
+//   { text: "Derivate states", completed: true },
 // ];
 
-// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
+// localStorage.setItem("TODOS_V1", JSON.stringify(defaultTodos));

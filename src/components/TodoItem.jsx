@@ -1,5 +1,5 @@
 import "../styles/TodoItem.css";
-import { GoCheck, GoX } from "react-icons/go";
+import { GoCheck, GoTrash } from "react-icons/go";
 
 function TodoItem({ completed, text, onComplete, onDelete }) {
   return (
@@ -14,7 +14,7 @@ function TodoItem({ completed, text, onComplete, onDelete }) {
         {text}
       </p>
       <span className="Icon Icon-delete" onClick={onDelete}>
-        <GoX />
+        <GoTrash />
       </span>
     </li>
   );

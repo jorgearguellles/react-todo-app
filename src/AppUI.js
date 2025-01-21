@@ -7,10 +7,18 @@ import { TodoItem } from "./components/TodoItem";
 import { CreateTodoBtn } from "./components/CreateTodoBtn";
 import { TodosLoading } from "./components/TodosLoading";
 import { TodosError } from "./components/TodosError";
+import { Modal } from "./components/Modal";
+import { TodoForm } from "./components/TodoForm";
 
 export function AppUI() {
-  const { loading, error, searchedTodos, completeTodo, deleteTodo } =
-    useContext(TodoContext);
+  const {
+    loading,
+    error,
+    searchedTodos,
+    completeTodo,
+    deleteTodo,
+    isModalOpen,
+  } = useContext(TodoContext);
   return (
     <div className="App">
       <TodoCounter />
@@ -31,7 +39,13 @@ export function AppUI() {
         ))}
       </TodoList>
 
-      <CreateTodoBtn />
+      {!loading && <CreateTodoBtn />}
+
+      {isModalOpen && (
+        <Modal>
+          <TodoForm />
+        </Modal>
+      )}
     </div>
   );
 }
