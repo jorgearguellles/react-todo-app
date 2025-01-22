@@ -10,7 +10,7 @@ function TodoCounter() {
   if (loading) {
     message = "Todo List App";
   } else if (totalTodos === 0) {
-    message = "Create a ToDo !";
+    message = "Create you ToDo !";
   } else if (completedTodos === totalTodos) {
     message = "You finished all your ToDos, Congratulations!!!";
   } else {
