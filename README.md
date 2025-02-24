@@ -1,75 +1,38 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# React Todo App
 
-¡Hola, Platzinauta!
+Welcome to the **React Todo App** project! This is an interactive to-do list application built with React.js, designed to help you manage your tasks efficiently.
+g
+## Features
 
-En este repositorio encontrarás el código de todas las clases del [Curso de Introducción a React.js](https://platzi.com/reactjs). Para empezar solo debes clonar este repositorio (`git clone`), instalar sus dependencias (`npm i`) y ejecutar la aplicación (`npm start`).
+- **Add Tasks**: Allows you to add new tasks to your list.
+- **Complete Tasks**: Mark tasks as completed once they're done.
+- **Delete Tasks**: Remove tasks that are no longer needed.
+- **Search Tasks**: Filter tasks using keywords for easier navigation.
 
-La rama principal contiene el código con el que eempezamos el curso. En las demás ramas encontrarás el código de las siguientes clases y finalmente el deploy de la aplicación.
+## Application Overview
 
-¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
+The React Todo App provides a user-friendly interface to manage your daily tasks. You can add, complete, or delete tasks as needed. The search functionality allows you to filter specific tasks, making it easy to stay organized and track your activities.
 
-## Getting Started with Create React App
+## Applied Knowledge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The development of this application incorporates the following concepts and technologies:
 
-## Available Scripts
+- **React.js**: The main library used to build the user interface declaratively and efficiently.
+- **Functional Components and Hooks**: Utilized functional components with hooks like `useState` and `useEffect` to manage state and side effects.
+- **Context API**: Applied React's Context API to handle global state management, avoiding prop drilling.
+- **LocalStorage**: Leveraged browser storage to persist tasks even after refreshing the page.
+- **CSS Modules**: Styled components using modular CSS for clean and maintainable design.
+- **Unit Testing**: Employed tools like Jest and React Testing Library to ensure component and hook functionality.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+To get started with this project, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the Repository**: Download the source code to your local machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/jorgearguellles/react-todo-app.git´´´
 
-### `npm run build`
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. **Install Dependencies:** Navigate to the project directory and install the required dependencies.
