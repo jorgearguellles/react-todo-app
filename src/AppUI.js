@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { TodoContext } from "./context/todoContext";
 import { TodoCounter } from "./components/TodoCounter";
 import { TodoSearch } from "./components/TodoSearch";

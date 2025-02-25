@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+import React, { createContext, useState } from "react";
+import PropTypes from 'prop-types';
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { v4 as uuidv4 } from "uuid";
 
@@ -68,5 +69,8 @@ function TodoProvider({ children }) {
     </TodoContext.Provider>
   );
 }
+TodoProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export { TodoContext, TodoProvider };

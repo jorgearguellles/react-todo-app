@@ -1,3 +1,4 @@
+import React from 'react';
 import { useContext, useState } from "react";
 import { TodoContext } from "../context/todoContext";
 
@@ -23,7 +24,7 @@ export function TodoForm() {
 
   return (
     <form onSubmit={onSubmit}>
-      <label>Let's Create a new ToDo</label>
+      <label>Let&apos;s Create a new ToDo</label>
       <textarea
         placeholder="Do ..."
         value={newTodoValue}

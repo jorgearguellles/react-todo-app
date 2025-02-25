@@ -25,15 +25,21 @@
 }
 
 .CreateTodoButton.empty-todos {
-  animation: blink 1.2s infinite; /* Animación más lenta para resaltar */
+  animation: blink 1.2s infinite;
+  /* Animación más lenta para resaltar */
 }
 
 /* Animación de parpadeo */
 @keyframes blink {
-  0%, 100% {
-    box-shadow: 0 0 50px 15px rgba(35, 156, 8, 0.9); /* Sombra más intensa y amplia */
+
+  0%,
+  100% {
+    box-shadow: 0 0 50px 15px rgba(35, 156, 8, 0.9);
+    /* Sombra más intensa y amplia */
   }
+
   50% {
-    box-shadow: 0 0 70px 25px rgba(35, 156, 8, 0.5); /* Mayor alcance y suavidad */
+    box-shadow: 0 0 70px 25px rgba(35, 156, 8, 0.5);
+    /* Mayor alcance y suavidad */
   }
 }

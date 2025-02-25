@@ -1,7 +1,10 @@
 .TodoSearch {
-  background: rgba(255, 255, 255, 0.5); /* Fondo blanco translúcido */
-  backdrop-filter: blur(10px); /* Difumina el fondo */
-  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con navegadores webkit */
+  /* Fondo blanco translúcido */
+  background: rgba(255, 255, 255, 0.5);
+  /* Difumina el fondo */
+  backdrop-filter: blur(10px);
+  /* Compatibilidad con navegadores webkit */
+  -webkit-backdrop-filter: blur(10px);
   border: none;
   border-radius: 50px;
   margin: 40px;

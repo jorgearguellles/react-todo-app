@@ -1,5 +1,7 @@
+import React from 'react';
 import "../styles/TodoItem.css";
 import { GoCheck, GoTrash } from "react-icons/go";
+import PropTypes from 'prop-types';
 
 function TodoItem({ completed, text, onComplete, onDelete }) {
   return (
@@ -19,5 +21,11 @@ function TodoItem({ completed, text, onComplete, onDelete }) {
     </li>
   );
 }
+TodoItem.propTypes = {
+  completed: PropTypes.bool.isRequired,
+  text: PropTypes.string.isRequired,
+  onComplete: PropTypes.func.isRequired,
+  onDelete: PropTypes.func.isRequired,
+};
 
 export { TodoItem };
