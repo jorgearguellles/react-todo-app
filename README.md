@@ -1,7 +1,122 @@
 # React Todo App
 
-Welcome to the **React Todo App** project! This is an interactive to-do list application built with React.js, designed to help you manage your tasks efficiently.
-g
+A modern and efficient Todo application built with React, implementing best practices and clean architecture patterns.
+
+## 🚀 Technologies
+
+- **React 18** - Latest version of React for building user interfaces
+- **React Router DOM v6** - For handling routing and navigation
+- **React Icons** - For beautiful and consistent iconography
+- **PropTypes** - For runtime type checking of React props
+- **UUID** - For generating unique identifiers
+- **Jest & React Testing Library** - For comprehensive testing
+- **ESLint** - For code quality and style consistency
+- **GitHub Pages** - For deployment and hosting
+
+## 🏗️ Architecture & Design Patterns
+
+### Component Structure
+
+The application follows a modular component-based architecture with clear separation of concerns:
+
+- **Presentational Components**: UI-focused components that receive data and callbacks via props
+- **Container Components**: Handle data and business logic
+- **Context API**: For state management and prop drilling prevention
+
+### Key Patterns Implemented
+
+- **Component Composition**: Breaking down complex UIs into smaller, reusable components
+- **Custom Hooks**: For reusable logic and state management
+- **Context API**: For global state management
+- **Error Boundaries**: For graceful error handling
+- **Loading States**: For better user experience
+- **Modal Pattern**: For focused user interactions
+
+## 📱 UI Showcase
+
+### Main Features
+
+- Todo creation and management
+- Search functionality
+- Progress tracking
+- Responsive design
+- Modal interactions
+- Loading states
+- Error handling
+
+### Screenshots
+
+![Login Screen](https://github.com/jorgearguellles/react-todo-app/blob/main/public/1.png)
+![Login Screen](https://github.com/jorgearguellles/react-todo-app/blob/main/public/2.png)
+![Login Screen](https://github.com/jorgearguellles/react-todo-app/blob/main/public/3.png)
+![Login Screen](https://github.com/jorgearguellles/react-todo-app/blob/main/public/4.png)
+
+## 🛠️ Development
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/jorgearguellles/react-todo-app.git
+
+# Navigate to project directory
+cd react-todo-app
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
+### Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run deploy` - Deploys to GitHub Pages
+
+## 🧪 Testing
+
+The project includes comprehensive testing setup with Jest and React Testing Library:
+
+- Unit tests for components
+- Integration tests for user interactions
+- Test coverage reporting
+
+## 📦 Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── context/       # Context providers
+├── hooks/         # Custom React hooks
+├── styles/        # CSS and styling files
+├── __tests__/     # Test files
+└── App.js         # Main application component
+```
+
+## 👨‍💻 Developer
+
+### Jorge Arias Argüelles
+
+- [LinkedIn Profile](https://www.linkedin.com/in/jorgeariasarguelles/)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- Built as part of the Platzi React course
+- Inspired by modern todo applications
+- Thanks to the React community for their excellent documentation and tools
+
 ## Features
 
 - **Add Tasks**: Allows you to add new tasks to your list.
@@ -31,7 +146,7 @@ To get started with this project, follow these steps:
 1. **Clone the Repository**: Download the source code to your local machine.
 
    ```bash
-   git clone https://github.com/jorgearguellles/react-todo-app.git´´´
+   git clone https://github.com/jorgearguellles/react-todo-app.git
 
    ```
 
